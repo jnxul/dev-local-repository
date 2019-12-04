@@ -12,6 +12,17 @@ git remote add origin -- agrega mis archivos a un repositorio web.
 git remote rm origin -- elimina el origen del repositorio
 git push -u origin master -- sube los cambios contemplados en commit a el origen en la nube
 
+/*Muestra el log más pequeño y organizado.*/
+git log --decorate --oneline --graph /// 
+
+/*Guarda comandos largos en un "alias"*/
+git config --global alias.lol "log --decorate --oneline --graph"
+
+/*Le pone colorsitos a los comandos.*/
+git log --graph --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%cr)
+%C(yellow)<%an>%Creset'
+
+
 **---***---***--**
 Los nombres que terminan con un slash/ es porque son carpetas.
 Para ignorar archivos, se crea el archivo ".gitignore" donde voy a listar los archivos que no quiero que se sincronizen.
