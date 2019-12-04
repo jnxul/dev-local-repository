@@ -7,9 +7,28 @@ git commit --para subir los archivos a stagging area (se abre editor, presiona "
 	git commit -m "un mensaje acá" para evitar entrar al editor.
 git log --para ver los commits que he realizado
 git diff --compara las diferencias que tiene un archivo (local vs snapshot)
+<<<<<<< HEAD
 git branch -- muestra los proyectos además del proyecto en que estoy metida.
 	git branch nombre -- crea una versión alternativa del proyecto que estoy trabajando.
 git checkout nombre -- cambia de proyecto
+=======
+
+git remote add origin -- agrega mis archivos a un repositorio web.
+git remote rm origin -- elimina el origen del repositorio
+git push -u origin master -- sube los cambios contemplados en commit a el origen en la nube
+
+git clone *link del repositorio en Github*
+
+/*Muestra el log más pequeño y organizado.*/
+git log --decorate --oneline --graph /// 
+
+/*Guarda comandos largos en un "alias"*/
+git config --global alias.lol "log --decorate --oneline --graph"
+
+/*Le pone colorsitos a los comandos.*/
+git log --graph --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%cr)
+%C(yellow)<%an>%Creset'
+>>>>>>> 20191129
 
 
 **---***---***--**
